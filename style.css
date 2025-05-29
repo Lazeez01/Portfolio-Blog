@@ -1,0 +1,51 @@
+body {
+
+    .navbar {
+        display: flex; justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: pink;
+        justify-content: space-between;
+            }
+    .hamburger {
+        width: 30px;
+        height: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+                
+            }
+
+    .bar {
+        height: 1px;
+        background-color: black;
+        width: 100%;
+        margin: 2px 0;
+
+            }
+
+    .nav-buttons {
+        display: flex;
+        gap: 40px;
+
+            }
+
+    .nav-buttons button {
+        padding: 20px 30px;
+        border: none;
+        background-color: rgb(29, 95, 95);
+        color: white;
+        border-radius:100px;
+        cursor: pointer;
+
+            }
+
+    .nav-buttons button:hover {
+        background-color: orange;
+            }
+
+        
+    background-color: rgb(29, 95, 95);
+            }
+     
