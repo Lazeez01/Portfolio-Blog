@@ -1,51 +1,169 @@
+/* ===================================== */
+/*              GLOBAL STYLES           */
+/* ===================================== */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 
-    .navbar {
-        display: flex; justify-content: space-between;
-        align-items: center;
-        padding: 20px;
-        background-color: pink;
-        justify-content: space-between;
-            }
-    .hamburger {
-        width: 30px;
-        height: 25px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        cursor: pointer;
-                
-            }
+main {
+    flex: 1 0 auto;
+}
 
-    .bar {
-        height: 1px;
-        background-color: black;
-        width: 100%;
-        margin: 2px 0;
 
-            }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: black;
+  margin: 0;
+  padding: 0;
+}
 
-    .nav-buttons {
-        display: flex;
-        gap: 40px;
 
-            }
+body {
+  background: linear-gradient(-45deg, #64046f, #102645, #7a8a22, #1a295d);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
 
-    .nav-buttons button {
-        padding: 20px 30px;
-        border: none;
-        background-color: rgb(29, 95, 95);
-        color: white;
-        border-radius:100px;
-        cursor: pointer;
 
-            }
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
 
-    .nav-buttons button:hover {
-        background-color: orange;
-            }
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
 
-        
-    background-color: rgb(29, 95, 95);
-            }
-     
+a {
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.button {
+  transition: 0.3s ease;
+}
+
+/* ===================================== */
+/*              NAVBAR                   */
+/* ===================================== */
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #fff;
+  margin-left: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* ===================================== */
+/*              HOME PAGE                */
+/* ===================================== */
+
+
+
+.home-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.home-image {
+  flex: 1 1 300px;
+}
+
+.profile-img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.home-image img,
+.profile-img {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  margin: 0 auto;
+  display: block;
+}
+
+.home-text {
+  flex: 2;
+}
+
+.home-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.home-text p.lead {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #6c757d;
+}
+
+
+.home-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===================================== */
+/*              FOOTER                   */
+/* ===================================== */
+
+footer {
+  background-color: #212529;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+}
+
+/* ===================================== */
+/*         MEDIA QUERIES                 */
+/* ===================================== */
+
+@media (max-width: 768px) {
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  .home-text p.lead {
+    font-size: 1rem;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .home-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}

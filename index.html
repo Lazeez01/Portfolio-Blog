@@ -6,32 +6,82 @@
 
 
         <title>My Portfolio + Blog</title>
-        <link rel="stylesheet" href="style.css"
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         
     </head>
     <body>
 
-            <header class="navbar">
-                <div class="hamburger">
-                    <div class="bar"></div>
-                    <div class="bar"></div>
-                    <div class="bar"></div>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-toggler-explanded-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Portfolio + Blog</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+           
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+                
+        </nav>
+
+        <br>
+        <br>
+        <br>
+    <main>
+        <div class=""container mt-5">
+            <div class="home-section">
+                <div class="home-image">
+                    <img src="images/IMG_9107.jpeg" alt="Home Image" class="img-fluid">
                 </div>
-                 <div class="nav-buttons">
-                    <button onclick="location.href='portfolio.html'">Portfolio</button>
-                    <button onclick="location.href='blog.html'">Blog</button>
-                    <button onclick="location.href='contact.html'">Contact</button>
+                <div class="home-text">
+                    <h1>My Portfolio + Blog</h1>
+                    <p class="lead"> Ethical Hacker | Penetration Tester | Front-End Developer | Blogger | Creative thinker</p>
+                    <p>Explore my projects, read my blog, and learn more about me!</p>
+                    <p>
+                        Welcome to my personal space on the web. I'm passionate about crafting clean and user-friendly websites.
+                        Here you'll find my recent projects, my professional background, blog posts on tech and design, and ways to get in touch.
+                    </p>
+                    <a href="projects.html" class="btn btn-primary mt-2">View My Projects</a>
+                    <a href="contact.html" class="btn btn-outline-secondary mt-2">Contact Me</a>
                 </div>
+                
+            
+    </main>
 
-            </header>
-            <br>
-            <br>
-            <br>
-            <br>
 
-            <a href="Portfolio.html" title"Once Upon a time!">
-                <img src="images/IMG_9107.jpeg" height="500" width="430">
+        <!-- Footer -->
+        <footer class="text-center py-3 mt-5">
+            <p>&copy; 2025 My Portfolio + Blog. All rights reserved.</p>
+            <p>Follow me on 
+                <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a>, 
+                <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a>, 
+                <a href="https://www.twitter.com/yourprofile" target="_blank">Twitter</a>
+            </p>
+        </footer>
 
-            </a> 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        
     </body>
 </html>
