@@ -11,7 +11,7 @@
 
 <main>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-toggler-explanded-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Contact Us</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -20,10 +20,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Me</a></li>
           <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
           <li class="nav-item"><a class="nav-link active" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
@@ -31,8 +31,10 @@
   </nav>
 
 
-        <form action="submit_page.php" method="post">
-            <div>
+        <form action="#" method="post">
+
+          <br>
+            <div class="mb-3">
                 <label for="fname">First name:</label>
                 <input type="text" id="fname" name="fname" placeholder="Name" required>
                 <br>
@@ -40,30 +42,30 @@
 
             <br>
 
-            <div>
+            <div class="mb-3">
                 <label for="lname">Last name:</label>
                 <input type="text" id="lname" name="lname" placeholder="Surname" required>
             </div>
 
             <br>
 
-            <div>
+            <div class="mb-3">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="password" required>
             </div>
 
             <br>
 
-            <div>
+            <div class="mb-3">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" placeholder="@gmail.com" required>
             </div>
 
             <br>
 
-            <div>
+            <div class="mb-3">
                 <label for="#">Phone Number:</label>
-                <input type="tel" id="#" name="#" placeholder="+1 --- ---" required>
+                <input type="tel" id="#" name="#" placeholder="+1 --- --- ---" required>
             </div>
 
             <br>
@@ -72,6 +74,12 @@
                 <textarea id="message" name="message" rows="3" placeholder="Type your message here..." required></textarea>
             </div>
 
+            <br>
+
+            <div>
+                <input type="reset"> <input type="submit">
+            </div>
+                
         </form>
 
 </main>
